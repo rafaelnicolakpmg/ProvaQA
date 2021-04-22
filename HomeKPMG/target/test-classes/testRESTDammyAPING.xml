@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="REST" configfailurepolicy="continue">
+
+    <!-- clean test -Dproject.testngFile=src/test/resources/testRESTDammyAPING -->
+
+    <test name="REST GET_EmployeeName">
+        <classes>
+            <class name="kpmg.RESTDammyAPITest">
+                <methods>
+                    <include name="GET_EmployeeName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="REST GET_EmployeeSalary">
+        <classes>
+            <class name="kpmg.RESTDammyAPITest">
+                <methods>
+                    <include name="GET_EmployeeSalary"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="REST POST_NewEmployee">
+        <classes>
+            <class name="kpmg.RESTDammyAPITest">
+                <methods>
+                    <include name="POST_NewEmployee"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="REST PUT_EmployeeData">
+        <classes>
+            <class name="kpmg.RESTDammyAPITest">
+                <methods>
+                    <include name="PUT_EmployeeData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="REST DELETE_Employee">
+        <classes>
+            <class name="kpmg.RESTDammyAPITest">
+                <methods>
+                    <include name="DELETE_Employee"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

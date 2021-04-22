@@ -1,0 +1,7 @@
+kpmg\Pages\PageObjectUtilities.class
+kpmg\DriverManager\ChromeFactory.class
+kpmg\DriverManager\EdgeFactory.class
+kpmg\Pages\KPMGPage.class
+kpmg\DriverManager\DriverFactory.class
+kpmg\DriverManager\DriverFactoryManager.class
+kpmg\DriverManager\FirefoxFactory.class

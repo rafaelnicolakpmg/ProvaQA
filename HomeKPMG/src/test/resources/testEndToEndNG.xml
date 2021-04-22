@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="E2E" configfailurepolicy="continue">
+
+    <!-- clean test -Dproject.testngFile=src/test/resources/testEndToEndNG -->
+
+    <test name="test Menu Navigation">
+        <classes>
+            <class name="kpmg.EndToEndTest">
+                <methods>
+                    <include name="testMenuNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="test Sign Up Today">
+        <classes>
+            <class name="kpmg.EndToEndTest">
+                <methods>
+                    <include name="testSignUpToday"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="test Sign Up Today By Existing Account">
+        <classes>
+            <class name="kpmg.EndToEndTest">
+                <methods>
+                    <include name="testSignUpTodayByExistingAccount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="test Search Content">
+        <classes>
+            <class name="kpmg.EndToEndTest">
+                <methods>
+                    <include name="testSearchContent"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
